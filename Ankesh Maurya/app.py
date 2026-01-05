@@ -661,13 +661,13 @@ def chat_interface():
             </div>
         """, unsafe_allow_html=True)
         
-        col1, col2 = st.columns([3, 1])
-        with col2:
-            if st.button("🌓" if st.session_state.theme == "light" else "☀️", key="theme_toggle"):
-                st.session_state.theme = "dark" if st.session_state.theme == "light" else "light"
-                st.rerun()
+        # col1, col2 = st.columns([3, 1])
+        # with col2:
+        #     if st.button("🌓" if st.session_state.theme == "light" else "☀️", key="theme_toggle"):
+        #         st.session_state.theme = "dark" if st.session_state.theme == "light" else "light"
+        #         st.rerun()
 
-        st.divider()
+        # st.divider()
 
         # New Chat Section
         st.markdown(f"""<p style="font-size: 12px; color: {colors['text_secondary']}; font-weight: 600; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;">💬 Chat</p>""", unsafe_allow_html=True)
